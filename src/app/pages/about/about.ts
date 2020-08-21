@@ -10,7 +10,7 @@ import { PopoverPage } from '../about-popover/about-popover';
   styleUrls: ['./about.scss'],
 })
 export class AboutPage {
-  location = 'madison';
+  location = 'juanita';
   conferenceDate = '2047-05-17';
 
   selectOptions = {

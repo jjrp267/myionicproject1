@@ -58,6 +58,15 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'live',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../live/live.module').then(m => m.LivePageModule)
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/app/tabs/schedule',
         pathMatch: 'full'
